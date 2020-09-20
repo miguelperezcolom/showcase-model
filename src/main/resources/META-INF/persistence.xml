@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+             xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+    <persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+
+        <class>org.example.domain.boundaries.educational.entities.AcademicPlan</class>
+        <class>org.example.domain.boundaries.educational.entities.Classroom</class>
+        <class>org.example.domain.boundaries.educational.entities.Course</class>
+        <class>org.example.domain.boundaries.educational.entities.FinalGrade</class>
+        <class>org.example.domain.boundaries.educational.entities.PartialGrade</class>
+        <class>org.example.domain.boundaries.educational.entities.Person</class>
+        <class>org.example.domain.boundaries.educational.entities.Semester</class>
+        <class>org.example.domain.boundaries.educational.entities.Student</class>
+        <class>org.example.domain.boundaries.educational.entities.Subject</class>
+        <class>org.example.domain.boundaries.educational.entities.Teacher</class>
+        <class>org.example.domain.boundaries.financial.entities.BusinessAddress</class>
+        <class>org.example.domain.boundaries.financial.entities.FinancialAgent</class>
+        <class>org.example.domain.boundaries.financial.entities.Invoice</class>
+        <class>org.example.domain.boundaries.financial.entities.InvoiceLine</class>
+        <class>org.example.domain.boundaries.financial.entities.Item</class>
+        <class>org.example.domain.boundaries.financial.entities.Order</class>
+        <class>org.example.domain.boundaries.financial.entities.OrderLine</class>
+        <class>org.example.domain.boundaries.financial.entities.PersonalAddress</class>
+
+        <exclude-unlisted-classes>true</exclude-unlisted-classes>
+
+        <validation-mode>AUTO</validation-mode>
+
+        <properties>
+            <!--
+            <property name="javax.persistence.jdbc.driver" value="Database Driver Name" />
+            <property name="javax.persistence.jdbc.url" value="Database Url" />
+            <property name="javax.persistence.jdbc.user" value="Database Username" />
+            <property name="javax.persistence.jdbc.password" value="Database Password" />
+            -->
+        </properties>
+    </persistence-unit>
+</persistence>
