@@ -9,7 +9,7 @@ public class Populator {
 
     public void populateAll() throws Throwable {
 
-        JPAHelper.transact(em -> {
+        JPAHelper.transact("showcase", em -> {
 
             InputStream r = Populator.class.getResourceAsStream("/data/initialdata.yaml");
             if (r != null) {
@@ -17,7 +17,7 @@ public class Populator {
                 data.persistAll(em);
             }
 
-        });
+        }, null);
 
     }
 
