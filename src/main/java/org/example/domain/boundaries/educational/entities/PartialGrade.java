@@ -6,7 +6,7 @@ import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 
 @MateuMDDEntity
-public class PartialGrade {
+public class PartialGrade extends Grade {
 
     @NotNull
     @ManyToOne
