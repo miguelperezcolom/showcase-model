@@ -5,7 +5,7 @@ import lombok.MateuMDDEntity;
 import javax.persistence.ManyToOne;
 
 @MateuMDDEntity
-public class Student {
+public class Student extends Person {
 
     @ManyToOne
     Classroom classroom;
