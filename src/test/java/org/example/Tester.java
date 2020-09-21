@@ -1,6 +1,7 @@
 package org.example;
 
-import org.example.population.Populator;
+import org.example.application.population.Populator;
+import org.example.application.util.PropertiesLoader;
 
 public class Tester {
 

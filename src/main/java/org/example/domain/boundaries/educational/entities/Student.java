@@ -10,6 +10,6 @@ public class Student extends Person {
     @ManyToOne
     Classroom classroom;
 
-    boolean becado;
+    boolean scholarshipped;
 
 }

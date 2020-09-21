@@ -1,4 +1,4 @@
-package org.example.population;
+package org.example.application.population;
 
 import io.mateu.mdd.util.Helper;
 import io.mateu.mdd.util.JPAHelper;

@@ -1,4 +1,4 @@
-package org.example.population;
+package org.example.application.population;
 
 import lombok.Getter;
 import lombok.Setter;
