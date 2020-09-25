@@ -14,6 +14,10 @@ public class Classroom {
     @OneToOne
     Teacher tutor;
 
+    int capacity;
+
+    Double maximumAllowedRatio;
+
     @OneToMany(mappedBy = "classroom")
     List<Student> students;
 }

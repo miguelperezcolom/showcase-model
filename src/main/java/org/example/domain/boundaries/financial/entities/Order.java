@@ -1,20 +1,28 @@
 package org.example.domain.boundaries.financial.entities;
 
 import lombok.MateuMDDEntity;
-import org.example.domain.boundaries.educational.entities.Person;
+import org.example.domain.boundaries.common.entities.Person;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 @MateuMDDEntity
+@Table(name = "_order")
 public class Order {
 
     @NotNull
     @ManyToOne
     Person person; //todo: sustituir por id
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @NotNull
+    Date requestDateTime;
+
+    LocalDateTime delivered;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "order", orphanRemoval = true)
     List<OrderLine> lines;
 
     @NotNull

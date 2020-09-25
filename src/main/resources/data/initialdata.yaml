@@ -1,3 +1,111 @@
+teachers:
+  - &flor
+    name: Flor
+    birthDate: 1975-11-27
+  - &rafel
+    name: Rafel
+    birthDate: 1982-12-01
+
+students:
+  - &mateu
+    name: Mateu
+    birthDate: 2008-04-18
+  - &marcos
+    name: Marcos
+    birthDate: 2010-10-02
+  - &nuria
+    name: Nuria
+    birthDate: 2008-07-01
+
 plans:
   - &plan
     name: Plan
+    subjects:
+      - &matematicas
+        name: Matemáticas
+      - &ingles
+        name: Inglés
+      - &ciencias
+        name: Ciencias
+    courses:
+      - &c1
+        name: 2020-21
+        semesters:
+          - &s1
+            name: First semester
+          - &s2
+            name: Second semester
+
+
+partials:
+  - semester: *s1
+    teacher: *flor
+    subject: *matematicas
+    student: *mateu
+    value: A
+  - semester: *s1
+    teacher: *rafel
+    subject: *ingles
+    student: *mateu
+    value: A
+  - semester: *s2
+    teacher: *flor
+    subject: *matematicas
+    student: *mateu
+    value: A
+  - semester: *s2
+    teacher: *rafel
+    subject: *ingles
+    student: *mateu
+    value: A
+
+finals:
+  - course: *c1
+    teacher: *flor
+    subject: *matematicas
+    student: *mateu
+    value: A
+  - course: *c1
+    teacher: *rafel
+    subject: *ingles
+    student: *mateu
+    value: A
+
+classrooms:
+  - name: 1A
+    tutor: *flor
+    students:
+      - *mateu
+      - *nuria
+  - name: 1B
+    tutor: *rafel
+    students:
+      - *marcos
+
+invoiceTags:
+  - name: Important
+  - name: Claimed
+  - name: Issued
+  - name: Rejected
+
+
+buildings:
+  - &jml
+    name: IES Joan María Llompart
+
+providers:
+  - &copylaser
+    name: CopyLaser
+  - &emaya
+    name: Emaya
+  - &mercadona
+    name: Mercadona
+
+technicians:
+  - &jose
+    name: José
+  - &juan
+    name: Juan
+
+
+

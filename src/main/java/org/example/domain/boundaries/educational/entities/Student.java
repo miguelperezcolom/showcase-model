@@ -1,6 +1,8 @@
 package org.example.domain.boundaries.educational.entities;
 
+import io.mateu.mdd.core.annotations.VisibleIf;
 import lombok.MateuMDDEntity;
+import org.example.domain.boundaries.common.entities.Person;
 
 import javax.persistence.ManyToOne;
 
@@ -11,5 +13,8 @@ public class Student extends Person {
     Classroom classroom;
 
     boolean scholarshipped;
+
+    @VisibleIf("$this.scholarshipped")
+    String scholarship;
 
 }

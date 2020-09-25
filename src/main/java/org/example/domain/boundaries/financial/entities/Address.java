@@ -1,10 +1,11 @@
 package org.example.domain.boundaries.financial.entities;
 
-import lombok.MateuMDDEntity;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.Embeddable;
 
-@Embeddable
+@Embeddable@Getter@Setter
 public class Address {
 
     String street;

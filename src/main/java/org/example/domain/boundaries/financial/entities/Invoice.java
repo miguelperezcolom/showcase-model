@@ -3,6 +3,7 @@ package org.example.domain.boundaries.financial.entities;
 import lombok.MateuMDDEntity;
 
 import javax.persistence.CascadeType;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.validation.constraints.NotNull;
@@ -19,5 +20,8 @@ public class Invoice {
     List<InvoiceLine> lines;
 
     double total;
+
+    @ManyToMany(mappedBy = "invoices")
+    List<InvoiceTag> tags;
 
 }

@@ -8,6 +8,9 @@ import javax.validation.constraints.NotNull;
 @MateuMDDEntity
 public class OrderLine {
 
+    @ManyToOne
+    final Order order;
+
     @NotNull
     @ManyToOne
     Item item;

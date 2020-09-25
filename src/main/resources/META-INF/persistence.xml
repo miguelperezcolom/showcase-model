@@ -10,19 +10,23 @@
         <class>org.example.domain.boundaries.educational.entities.Grade</class>
         <class>org.example.domain.boundaries.educational.entities.FinalGrade</class>
         <class>org.example.domain.boundaries.educational.entities.PartialGrade</class>
-        <class>org.example.domain.boundaries.educational.entities.Person</class>
+        <class>org.example.domain.boundaries.common.entities.Person</class>
         <class>org.example.domain.boundaries.educational.entities.Semester</class>
         <class>org.example.domain.boundaries.educational.entities.Student</class>
         <class>org.example.domain.boundaries.educational.entities.Subject</class>
         <class>org.example.domain.boundaries.educational.entities.Teacher</class>
-        <class>org.example.domain.boundaries.financial.entities.BusinessAddress</class>
+        <class>org.example.domain.boundaries.financial.entities.Address</class>
         <class>org.example.domain.boundaries.financial.entities.FinancialAgent</class>
         <class>org.example.domain.boundaries.financial.entities.Invoice</class>
+        <class>org.example.domain.boundaries.financial.entities.InvoiceTag</class>
         <class>org.example.domain.boundaries.financial.entities.InvoiceLine</class>
         <class>org.example.domain.boundaries.financial.entities.Item</class>
         <class>org.example.domain.boundaries.financial.entities.Order</class>
         <class>org.example.domain.boundaries.financial.entities.OrderLine</class>
-        <class>org.example.domain.boundaries.financial.entities.PersonalAddress</class>
+        <class>org.example.domain.boundaries.maintenance.entities.Building</class>
+        <class>org.example.domain.boundaries.maintenance.entities.Provider</class>
+        <class>org.example.domain.boundaries.maintenance.entities.Technician</class>
+        <class>org.example.domain.boundaries.maintenance.entities.Issue</class>
 
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
 
