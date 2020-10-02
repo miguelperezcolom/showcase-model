@@ -1,6 +1,6 @@
 package org.example.domain.boundaries.educational.entities;
 
-import io.mateu.mdd.core.annotations.VisibleIf;
+import io.mateu.mdd.shared.annotations.VisibleIf;
 import lombok.MateuMDDEntity;
 import org.example.domain.boundaries.common.entities.Person;
 

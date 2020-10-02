@@ -2,7 +2,7 @@ package org.example.domain.boundaries.educational.entities;
 
 import com.vaadin.data.provider.DataProvider;
 import com.vaadin.data.provider.ListDataProvider;
-import io.mateu.mdd.core.annotations.DependsOn;
+import io.mateu.mdd.shared.annotations.DependsOn;
 import lombok.MateuMDDEntity;
 
 import javax.persistence.EnumType;

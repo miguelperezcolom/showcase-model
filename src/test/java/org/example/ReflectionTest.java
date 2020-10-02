@@ -1,13 +1,11 @@
 package org.example;
 
-import io.mateu.mdd.core.util.SharedHelper;
-import io.mateu.mdd.util.Helper;
-import io.mateu.mdd.util.JPAHelper;
+import io.mateu.util.SharedHelper;
+import io.mateu.util.persistence.JPAHelper;
 import org.example.application.population.Populator;
 import org.example.domain.boundaries.educational.entities.AcademicPlan;
 import org.example.domain.boundaries.educational.entities.Classroom;
 import org.example.domain.boundaries.educational.entities.Teacher;
-import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

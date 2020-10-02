@@ -1,7 +1,7 @@
 package org.example.domain.boundaries.maintenance.entities;
 
-import io.mateu.mdd.core.annotations.TextArea;
-import io.mateu.mdd.core.annotations.UseIdToSelect;
+import io.mateu.mdd.shared.annotations.TextArea;
+import io.mateu.mdd.shared.annotations.UseIdToSelect;
 import lombok.MateuMDDEntity;
 
 import javax.persistence.ManyToOne;

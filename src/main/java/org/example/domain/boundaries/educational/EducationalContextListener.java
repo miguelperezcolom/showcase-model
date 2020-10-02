@@ -1,9 +1,9 @@
 package org.example.domain.boundaries.educational;
 
 import io.mateu.mdd.core.annotations.BoundaryListener;
-import io.mateu.mdd.core.eventBus.EventBus;
 import io.mateu.mdd.shared.BoundedContextListener;
 import io.mateu.mdd.shared.Command;
+import io.mateu.util.eventBus.EventBus;
 import org.example.domain.boundaries.educational.logic.StartCourseCommand;
 import org.example.domain.boundaries.educational.logic.StudentGradedEventConsumer;
 

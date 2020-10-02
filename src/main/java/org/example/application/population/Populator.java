@@ -1,13 +1,13 @@
 package org.example.application.population;
 
-import io.mateu.mdd.util.Helper;
-import io.mateu.mdd.util.JPAHelper;
-import org.example.domain.boundaries.educational.entities.Classroom;
-import org.example.domain.boundaries.educational.entities.Teacher;
+
+import io.mateu.util.Helper;
+import io.mateu.util.persistence.JPAHelper;
 
 import java.io.InputStream;
 
-import static io.mateu.mdd.util.Helper.fromYaml;
+import static io.mateu.util.Helper.fromYaml;
+
 
 public class Populator {
 

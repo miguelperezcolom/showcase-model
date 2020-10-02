@@ -1,6 +1,6 @@
 package org.example.domain.boundaries.financial.logic;
 
-import io.mateu.mdd.util.JPAHelper;
+import io.mateu.util.persistence.JPAHelper;
 import org.example.domain.events.QuarterEndedEvent;
 
 import java.util.function.Consumer;

@@ -1,8 +1,8 @@
 package org.example.domain.boundaries.maintenance.entities;
 
-import io.mateu.mdd.core.annotations.UseCheckboxes;
-import io.mateu.mdd.core.annotations.UseIdToSelect;
-import io.mateu.mdd.core.annotations.UseRadioButtons;
+import io.mateu.mdd.shared.annotations.UseCheckboxes;
+import io.mateu.mdd.shared.annotations.UseIdToSelect;
+import io.mateu.mdd.shared.annotations.UseRadioButtons;
 import lombok.MateuMDDEntity;
 
 import javax.persistence.ManyToOne;

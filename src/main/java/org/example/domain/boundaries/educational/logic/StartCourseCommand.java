@@ -1,8 +1,8 @@
 package org.example.domain.boundaries.educational.logic;
 
-import io.mateu.mdd.core.util.Notifier;
 import io.mateu.mdd.shared.ScheduledCommand;
-import io.mateu.mdd.util.DDDHelper;
+import io.mateu.util.DDDHelper;
+import io.mateu.util.notification.Notifier;
 import org.example.domain.boundaries.educational.entities.CourseRepository;
 
 import java.time.LocalDateTime;

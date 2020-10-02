@@ -1,9 +1,9 @@
 package org.example.domain.boundaries.financial;
 
 import io.mateu.mdd.core.annotations.BoundaryListener;
-import io.mateu.mdd.core.eventBus.EventBus;
 import io.mateu.mdd.shared.BoundedContextListener;
 import io.mateu.mdd.shared.Command;
+import io.mateu.util.eventBus.EventBus;
 import org.example.domain.boundaries.financial.logic.QuarterStartedEventConsumer;
 
 import java.util.List;

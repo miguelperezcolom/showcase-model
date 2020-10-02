@@ -2,8 +2,8 @@ package org.example.domain.boundaries.educational.entities;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-import io.mateu.mdd.core.annotations.Ignored;
-import io.mateu.mdd.util.JPAHelper;
+import io.mateu.mdd.shared.annotations.Ignored;
+import io.mateu.util.persistence.JPAHelper;
 import lombok.MateuMDDEntity;
 
 import javax.persistence.*;

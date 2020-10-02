@@ -1,6 +1,7 @@
 package org.example.application.util;
 
-import io.mateu.mdd.util.Helper;
+
+import io.mateu.util.Helper;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

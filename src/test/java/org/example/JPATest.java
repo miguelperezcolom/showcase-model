@@ -1,8 +1,7 @@
 package org.example;
 
-import io.mateu.mdd.core.util.SharedHelper;
-import io.mateu.mdd.util.JPAHelper;
-import org.example.application.population.Populator;
+import io.mateu.util.SharedHelper;
+import io.mateu.util.persistence.JPAHelper;
 import org.example.domain.boundaries.educational.entities.Course;
 import org.example.domain.boundaries.educational.entities.Subject;
 import org.example.domain.boundaries.educational.entities.Teacher;

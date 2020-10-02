@@ -1,6 +1,6 @@
 package org.example.domain.boundaries.educational.entities;
 
-import io.mateu.mdd.core.annotations.UseChips;
+import io.mateu.mdd.shared.annotations.UseChips;
 import lombok.MateuMDDEntity;
 
 import javax.persistence.CascadeType;

@@ -1,8 +1,8 @@
 package org.example.domain.boundaries.financial.entities;
 
-import io.mateu.mdd.core.annotations.KPI;
-import io.mateu.mdd.core.annotations.Money;
-import io.mateu.mdd.core.annotations.TextArea;
+import io.mateu.mdd.shared.annotations.KPI;
+import io.mateu.mdd.shared.annotations.Money;
+import io.mateu.mdd.shared.annotations.TextArea;
 import lombok.MateuMDDEntity;
 
 import javax.persistence.ElementCollection;

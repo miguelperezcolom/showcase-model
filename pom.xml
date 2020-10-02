@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.example</groupId>
+  <groupId>io.mateu</groupId>
   <artifactId>showcase-model</artifactId>
   <version>1.0-SNAPSHOT</version>
   <build>
@@ -63,21 +63,16 @@
 
     <dependency>
       <groupId>io.mateu</groupId>
-      <artifactId>mdd-util</artifactId>
-      <version>0.0.13</version>
+      <artifactId>lifecycle</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
 
     <dependency>
       <groupId>io.mateu</groupId>
       <artifactId>mdd-annotationprocessing</artifactId>
-      <version>0.0.13</version>
+      <version>0.0.14</version>
     </dependency>
 
-    <dependency>
-      <groupId>io.mateu</groupId>
-      <artifactId>mdd-lifecycle</artifactId>
-      <version>0.0.13</version>
-    </dependency>
 
     <dependency>
       <groupId>io.mateu</groupId>
@@ -97,7 +92,7 @@
     <dependency>
       <groupId>io.mateu</groupId>
       <artifactId>mdd-eclipselink</artifactId>
-      <version>0.0.13</version>
+      <version>0.0.14</version>
       <scope>test</scope>
     </dependency>
 

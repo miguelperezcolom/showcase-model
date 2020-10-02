@@ -1,6 +1,6 @@
 package org.example.domain.events;
 
-import io.mateu.mdd.core.eventBus.Event;
+import io.mateu.util.eventBus.Event;
 import lombok.Getter;
 
 @Getter

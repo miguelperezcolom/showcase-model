@@ -2,7 +2,7 @@ package org.example.domain.boundaries.educational.entities;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-import io.mateu.mdd.core.annotations.TextArea;
+import io.mateu.mdd.shared.annotations.TextArea;
 import lombok.MateuMDDEntity;
 
 @MateuMDDEntity
