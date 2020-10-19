@@ -1,5 +1,6 @@
 package org.example.domain.boundaries.educational.entities;
 
+import com.google.common.collect.Lists;
 import com.vaadin.data.provider.DataProvider;
 import com.vaadin.data.provider.ListDataProvider;
 import io.mateu.mdd.shared.annotations.DependsOn;
@@ -27,7 +28,7 @@ public class Grade {
 
     @DependsOn("classroom")
     public DataProvider getStudentDataProvider() {
-        return new ListDataProvider(classroom != null?classroom.students: List.of());
+        return new ListDataProvider(classroom != null?classroom.students: Lists.newArrayList());
     }
 
     @NotNull@Enumerated(EnumType.STRING)

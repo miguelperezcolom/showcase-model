@@ -1,5 +1,6 @@
 package org.example.domain.boundaries.educational;
 
+import com.google.common.collect.Lists;
 import io.mateu.mdd.core.annotations.BoundaryListener;
 import io.mateu.mdd.shared.BoundedContextListener;
 import io.mateu.mdd.shared.Command;
@@ -28,7 +29,7 @@ public class EducationalContextListener implements BoundedContextListener {
 
     @Override
     public List<Command> getCommands() {
-        return List.of(new StartCourseCommand());
+        return Lists.newArrayList(new StartCourseCommand());
     }
 
     @Override

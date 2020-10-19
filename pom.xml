@@ -23,7 +23,7 @@
 
   <name>showcase-model</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://mateu.io</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -106,21 +106,6 @@
 
   </dependencies>
 
-  <distributionManagement>
-    <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>mateu-central</id>
-      <url>http://nexus.mateu.io/repository/mateu-central/</url>
-      <layout>default</layout>
-    </repository>
-    <snapshotRepository>
-      <uniqueVersion>true</uniqueVersion>
-      <id>mateu-central</id>
-      <url>http://nexus.mateu.io/repository/mateu-central/</url>
-      <layout>default</layout>
-    </snapshotRepository>
-  </distributionManagement>
-
   <repositories>
     <repository>
       <id>mateu-central</id>
@@ -134,5 +119,16 @@
       <url>http://nexus.mateu.io/repository/mateu-central</url>
     </pluginRepository>
   </pluginRepositories>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
 
 </project>

@@ -26,6 +26,8 @@ public abstract class Person {
     @NotEmpty
     String name;
 
+    String nationality;
+
     @ManyToOne
     FinancialAgent financialAgent;
 
