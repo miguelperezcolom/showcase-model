@@ -1,15 +1,23 @@
 package org.example.domain.boundaries.educational.entities;
 
 import io.mateu.mdd.shared.annotations.UseChips;
-import lombok.MateuMDDEntity;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
-import javax.persistence.CascadeType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.List;
 import java.util.Set;
 
-@MateuMDDEntity
+@Entity
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 public class AcademicPlan {
+
+    @Id
+    @GeneratedValue
+    private long id;
 
     String name;
 

@@ -2,14 +2,26 @@ package org.example.domain.boundaries.maintenance.entities;
 
 import io.mateu.mdd.shared.annotations.TextArea;
 import io.mateu.mdd.shared.annotations.UseIdToSelect;
-import lombok.MateuMDDEntity;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-@MateuMDDEntity
+@Entity
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 public class Issue {
+
+    @Id
+    @GeneratedValue
+    private long id;
 
     @ManyToOne@NotNull
     Building building;

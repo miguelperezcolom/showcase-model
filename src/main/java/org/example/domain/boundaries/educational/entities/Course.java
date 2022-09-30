@@ -4,16 +4,26 @@ import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import io.mateu.mdd.shared.annotations.Ignored;
 import io.mateu.util.persistence.JPAHelper;
-import lombok.MateuMDDEntity;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@MateuMDDEntity
+@Entity
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 @JsonIdentityInfo(generator = ObjectIdGenerators.StringIdGenerator.class, property = "@id")
 public class Course {
+
+    @Id
+    @GeneratedValue
+    private long id;
 
     String name;
 
@@ -21,6 +31,7 @@ public class Course {
     transient Map<Subject, Teacher> subjectResponsibles;
 
     @Ignored
+            @ElementCollection
     Map<Long, Long> _subjectResponsibles;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "course")

@@ -1,6 +1,8 @@
 package org.example.domain.boundaries.financial.entities;
 
-import lombok.MateuMDDEntity;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 import org.example.domain.boundaries.common.entities.Person;
 
 import javax.persistence.*;
@@ -9,9 +11,15 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
-@MateuMDDEntity
+@Entity
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 @Table(name = "_order")
 public class Order {
+
+    @Id@GeneratedValue
+    private long id;
 
     @NotNull
     @ManyToOne

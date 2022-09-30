@@ -1,10 +1,16 @@
 package org.example.domain.boundaries.financial.entities;
 
-import lombok.MateuMDDEntity;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@MateuMDDEntity
+@Entity
+@Getter
+@Setter
+@EqualsAndHashCode(of = "code")
 public class Item {
 
     @Id

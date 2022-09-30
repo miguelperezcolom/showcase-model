@@ -8,9 +8,14 @@ import io.mateu.mdd.shared.annotations.Output;
 import io.mateu.mdd.shared.annotations.TextArea;
 import io.mateu.mdd.shared.annotations.VisibleIf;
 import io.mateu.util.notification.Notifier;
-import lombok.MateuMDDEntity;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 import org.example.domain.boundaries.financial.entities.FinancialAgent;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotEmpty;
 import java.time.LocalDate;
@@ -19,9 +24,16 @@ import java.time.temporal.ChronoUnit;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@MateuMDDEntity
+@Entity
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 @JsonIdentityInfo(generator = ObjectIdGenerators.StringIdGenerator.class, property = "@id")
 public abstract class Person {
+
+    @Id
+    @GeneratedValue
+    private long id;
 
     @NotEmpty
     String name;
